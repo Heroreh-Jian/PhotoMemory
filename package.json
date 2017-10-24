@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "PhotoMemory Version 1",
   "main": "app.js",
+  "engines": {
+    "node": "8.7.0"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
