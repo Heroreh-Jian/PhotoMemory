@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Memory</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/landing.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+    </head>
+    <body>
+    
+    <div class="container">
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+    
+    <div id="landing-header">
+ 		<strong><h1>Welcome to Photo Memory!</h1></strong>
+ 		<h4>Let Photos Tell the Past and Envision the Future </h4>
+		<a href="/photos" data-toggle="button" aria-pressed="false" autocomplete="off" class="btn btn-lg btn-success">Share All Photo Memories</a>
+    </div>
+    
+    <div class="slideshow">
+     <img >
+     <img >
+     <img >
+     <img >
+     <img >
+    </div>
+
+    </body>
+</html>
+

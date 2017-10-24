@@ -1,0 +1,67 @@
+<% include ../partials/header %>
+
+  <div class="container">
+<form class="form-horizontal" role="form" action="/contact" method="POST"  id="contact_form">
+
+<legend>Please Leave a Message:</legend>
+
+<!--First Name input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">First Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="name" data-minlength="6" placeholder="First Name" class="form-control"  type="text" required>
+    </div>
+  </div>
+</div>
+
+<!-- Email input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="email" required>
+    </div>
+  </div>
+</div>
+
+<!--Phone# input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(408)-111-1111" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+<!-- message area -->
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Message</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="message" placeholder="Messages..." required></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group"  id="send">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-primary" >Send <span class="glyphicon glyphicon-send"></span></button>
+    <button class="btn btn-primary" type="reset">Reset <i class="fa fa-refresh" aria-hidden="true"></i></button>
+  </div>
+</div>
+
+
+</form>
+ 
+ 
+
+</div> 
+<% include ../partials/footer %>

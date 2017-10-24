@@ -1,0 +1,41 @@
+
+<% include ../partials/header %>
+
+<div class="container">  
+    <header class="jumbotron">
+        <div class="container">
+            <strong><h1>Photo Memory</h1></strong>
+            <p>Share Photos and Share Memories</p>
+            <p> 
+                <a class="btn btn-primary btn-lg" href="/photos/new">Create a New Photo Memory</a>
+            </p>
+            
+              <form action="/photos" method="GET" class="form-inline pull-right" id="photoSearch">
+                <div class="form-group-lg">
+                  <input type="text" name="search" placeholder="Photo Search............." class=" input-lg form-control">
+                  <button class="btn btn-primary btn-lg">Search</button>
+                </div>
+              </form>
+            
+        </div>
+    </header>
+     <div class="row text-center flex-wrap" id="photoResult">
+        <% photos.forEach(function(photo){ %>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <a href="/photos/<%= photo._id %>">
+                   <img id="imgDisplay" src="<%= photo.image %>">
+                   </a>
+                   <div class="caption">
+                       <h4><%= photo.name %></h4>
+                   </div>
+                   <p>
+                       <a href="/photos/<%= photo._id %>" class="btn btn-primary">More Info</a>
+                   </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<% include ../partials/footer %>

@@ -1,0 +1,11 @@
+<% include ../partials/header %>
+<div class="container">
+    <form class="form-signin" action="/photos/<%= photo_id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+        <h2 class="form-signin-heading text-center">Edit Comment</h2>
+        <input class="form-control" type="text" name="comment[text]" value="<%= comment.text %>">
+        <p></p>
+        <button onclick="return confirm('You are going to make changes to this comment.');"class="btn btn-lg btn-primary btn-block">Submit!</button>
+        <a href="/photos/<%= photo_id %>">Go Back</a>
+    </form>
+</div> <!-- /container -->
+<% include ../partials/footer %>

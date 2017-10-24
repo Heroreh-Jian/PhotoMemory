@@ -1,0 +1,83 @@
+#imgDisplay{
+    width:100%;
+    height:73%;
+    border:1px solid gray;
+}
+.thumbnail{
+
+    height:85%;
+}
+.col-md-4.col-sm-6{
+	height:400px;
+}
+
+.thumbnail.caption-full{
+    padding:10px;
+}
+
+#showPic{
+	margin:0;
+	padding:0;
+    width:100%;
+    height:500px;
+   
+}
+#delete{
+    display: inline
+}
+
+#edit{
+ text-align:center;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#content {
+	padding-bottom:30%;
+	margin:0;
+	
+}
+#footer {
+	width:100%;
+	position:absolute;
+	margin-bottom:0;
+	padding-bottom: 0;
+}
+
+.form-signin{
+	width:45%;
+	margin:70px auto;
+
+}
+
+#headerText{
+	font-size: 3.5em;
+	
+}
+#hd{
+	padding-top:35px;
+}
+#showHeading{
+	text-align: center;
+}
+#profile{
+	width:60%;
+	height:15%;
+	padding:0;
+	margin-right:0;
+
+}
+
+#send{
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.contact_form{
+	height:500px;
+}
+

@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+
+
+
+
+<div class="container">
+    <form class="form-signin" action="/photos/<%= photo._id%>/comments" method="POST">
+        <h2 class="form-signin-heading text-center">Add New Comment to <%= photo.name %></h2>
+        
+        <input class="form-control" type="text" name = "comment[text]" placeholder="Text">
+        <p></p>
+      
+        <button class="btn-primary btn-lg btn-default btn-block" >Submit</button>
+       
+        <a href="/photos/<%= photo._id%>">Go Back</a>
+    </form>
+</div> <!-- /container -->
+<% include ../partials/footer %>
