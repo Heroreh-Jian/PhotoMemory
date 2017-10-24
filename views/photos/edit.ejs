@@ -3,16 +3,19 @@
     <div clas="row">
         <h1 id="edit">Edit <%=photo.name %></h1>
         <div class="form-signin">
-            <form action="/photos/<%=photo._id %>?_method=PUT" method="POST">
+            <form action="/photos/<%=photo._id %>?_method=PUT" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
-                    <input class="form-control" type="text" name = "photo[name]" value="<%=photo.name %>">
+                    <label for="name">Photo Memory Name</label>
+                    <input id="name" class="form-control" type="text" name = "photo[name]" value="<%=photo.name %>">
                 </div>
 
                 <div class="form-group">
-                    <input class="form-control" type="text" name = "photo[image]" value="<%=photo.image %>">
+                    <label for="image">Image</label>
+                    <input id="image" class="form-control" type="file" name = "photo[image]" value="<%=photo.image %>" accept="image/*">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name = "photo[description]" value="<%=photo.description %>">
+                    <label for="description">Photo Description</label>
+                    <input id="description" class="form-control" type="text" name = "photo[description]" value="<%=photo.description %>">
                 </div>
                 
                 <div class="form-group">
