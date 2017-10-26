@@ -60,10 +60,9 @@ router.post("/", isLoggedIn, upload.single('image'), async function foo (req, re
 
       // upload image to cloudinary and set resulting url to image variable
       let result = await cloudinary.uploader.upload(req.file.path,function(result) { console.log(result); }, 
-  { 
-    moderation: "webpurify",
-    notification_url: "http://mysite.example.com/hooks" 
-  });
+    { moderation: "webpurify",
+      notification_url: "https://jian-yu-photo-memory-app.herokuapp.com/photos" 
+     });
       
       let image = result.secure_url;
       // build the newPhoto object
